@@ -1,0 +1,1 @@
+INSERT INTO book (title, content) values ('Magic', 'Magic is suprise.');

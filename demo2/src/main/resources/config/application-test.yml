@@ -1,0 +1,16 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        trace: true
+        webAllowOthers: true
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=MYSQL;DB_CLOSE_DELAY=-1 # h2 database 連接位址 Don't use DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver # 配置driver
+    username: sa # database 用戶名
+    password: # database 密碼
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect

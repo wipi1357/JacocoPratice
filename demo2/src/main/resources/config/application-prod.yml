@@ -1,0 +1,12 @@
+spring:
+  h2:
+    console:
+      enabled: false
+  datasource:
+    url: jdbc:h2:mem:proddb;MODE=MYSQL;DB_CLOSE_ON_EXIT=FALSE # h2 database 連接位址
+    driver-class-name: org.h2.Driver # 配置driver
+    username: sa # database 用戶名
+    password: 1234 # database 密碼
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
